@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    document.addEventListener('DOMContentLoaded', function () {
     // Variables globales
     const gameIntervals = {};
     const gameTimeouts = {};

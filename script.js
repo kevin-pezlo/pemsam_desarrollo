@@ -1,4 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
+    // Variables globales
+    const gameIntervals = {};
+    const gameTimeouts = {};
+    const gameModals = {
+        obstacle: document.getElementById('obstacle-modal'),
+        aim: document.getElementById('aim-modal'),
+        puzzle: document.getElementById('puzzle-modal'),
+        tree: document.getElementById('tree-modal'),
+        maze: document.getElementById('maze-modal'),
+        music: document.getElementById('music-modal'),
+        animals: document.getElementById('animals-modal')
+    };
+
+    // Función para bloquear scroll
+    function blockScroll(block = true) {
+        document.body.style.overflow = block ? 'hidden' : 'auto';
+    }
     // Menú hamburguesa
     const hamburgerBtn = document.getElementById('hamburgerBtn');
     const navMenu = document.getElementById('navMenu');
